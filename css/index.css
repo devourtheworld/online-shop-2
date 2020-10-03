@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+::selection {
+    color: white;
+    background: #53354aa2;
+  }
+
+/* Color Variables */
+:root{
+    --color1: #fff; /*Red #E84545*/
+    --color2: #53354A; /*Plum*/
+    --color3: #903749; /*Maroon*/
+}
+
+/* html{
+    max-width: 800px;
+    margin: auto;
+} */
+
+body{
+    background-color: var(--color1);
+    color: var(--color2);
+    font-family: 'Oswald', sans-serif;
+    line-height: 2em;
+    text-transform: uppercase;
+    max-width: 960px;
+    margin: auto;
+}
+
+h1{
+    font-size: 3em;
+    padding: 3em 0 1em 0;
+}
+
+.navBar{
+    background-color: var(--color2);
+    position: fixed;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.logo{
+    /* background-color: var(--color1); */
+    /* border-radius: 50px; */
+    display: inline-block;
+    /* height: 45px; */
+    margin: 1em 0;
+    margin: 0;
+    font-size: 3rem;
+    /* width: 125px; */
+    color: white;
+}
+
+.logo p{
+    margin: 0;
+    user-select: none;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 2% 0 2%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 50%;
+}
+
+nav ul a {
+  color: var(--color1);
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
+nav ul a:hover{
+    color: var(--color3)
+}
+  
+nav li  {
+    display: inline-block;
+}
+
+nav #menu-toggle{
+    display: none;
+}
+
+header{
+    padding-top: 75px;
+}
+
+nav .label-toggle{
+    display: none;
+}
+
+nav .wrapper{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .wrapper{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+} */
+
+@media screen and (max-width: 768px){
+    nav nav ul a{
+        color: var(--color2);
+    }
+
+    nav ul{
+        background-color: var(--color1);
+        display: block;
+        height: 0;
+        list-style-type: none;
+        opacity: 0;
+        text-align: center;
+        transition: all 1s ease;
+        width:100%;
+        visibility: hidden;
+        padding: 0;
+    }
+
+    nav li{
+        border-bottom: 2px solid var(--color2);
+        color: var(--color2);
+        display: block;
+        font-size: 1.5em;
+        padding: 2em 0;
+    }
+
+    nav #menu-toggle:checked ~ ul{
+        opacity: 1;
+        height: 100vh;
+        visibility: visible;
+    }
+
+    nav .label-toggle{
+        background: linear-gradient(to bottom, var(--color1) 0%, var(--color1) 20%, transparent 20%, transparent 40%, var(--color1) 40%, var(--color1) 60%, transparent 60%, transparent 80%, var(--color1) 80%, var(--color1) 100%);
+        cursor: pointer;
+        display: block;
+        float: right;
+        height: 35px;
+        margin-top: 1em;
+        width: 35px;
+    }
+
+    nav .wrapper{
+        display: block;
+    }
+}
+
+section.jumbotron{
+    background-image: url(../img/test-image.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.card-button {
+    border-color: black;
+    color: black;
+}
+
+.card-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.product img {
+    display: block;
+    width: 100%;
+}
+
+.product  .product-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 560px) {
+    .products {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 820px) {
+    .products {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    .products {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.product-input, .phone-input, .email-input, .name-input, .confirm-btn {
+    visibility: hidden;
+}
+
+
+footer{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin: 55px 0 0 0;
+}

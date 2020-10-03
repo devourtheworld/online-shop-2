@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Space+Mono:wght@700&display=swap" rel="stylesheet');
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    --main-color: black;
+    --accent-color: white;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h1, h2, p, div {
+    margin: 0;
+    padding: 0;
+}
+
+header .banner h1, header nav .logo{
+    font-family: 'Space Mono', sans-serif;
+    font-size: 3.3rem;
+    text-align: center;
+}
+
+header nav .menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+    flex: 1;
+}
+
+header > nav > ul.menu > li > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header > nav > ul.menu > li > a:hover {
+    border: 1px solid var(--main-color);
+}
+
+@media (min-width: 620px) {
+    header nav {
+        display: flex;
+        align-items: center;     
+    }
+}
+
+header .banner {
+    background-image: url(../img/waves.jpg);
+    background-position: top;
+    background-size: cover;    
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .banner h1 {
+    color: var(--accent-color);
+}
+
+/* Controls */
+
+.button {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.7s;
+    background-color: transparent;
+}
+
+.button:hover {
+    color: #000000;
+    border: 0.1em solid #000000;
+    background-color:transparent;
+    cursor: pointer;
+}
+
+.card-button {
+    border-color: black;
+    color: black;
+}
+
+.card-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.product img {
+    display: block;
+    width: 100%;
+}
+
+.product  .product-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 560px) {
+    .products {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 820px) {
+    .products {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    .products {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.product-input, .phone-input, .email-input, .name-input, .confirm-btn {
+    visibility: hidden;
+}
