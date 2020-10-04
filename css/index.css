@@ -170,19 +170,34 @@ section.jumbotron{
 
 
 .card-button {
-    border-color: black;
+    border-bottom: 1px solid #53354a;
+    border-top: 1px solid #53354a;
+    /* border-color: black; */
     color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a.card-button{
+    padding: 0 2px 0 2px;
 }
 
 .card-button:hover {
-    background-color: black;
+    background-color: #53354aa2;
+    border-color: transparent;
     color: white;
+    transition: 0.5s;
 }
 
 .product img {
     display: block;
     width: 100%;
 }
+
+/* .product{
+    border: 1px solid black;
+    padding: 3px;
+} */
 
 .product  .product-buttons {
     display: flex;

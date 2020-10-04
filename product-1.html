@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT 1</title>
+    <link rel="stylesheet" href="css/product-1.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navBar">
+            <nav class="wrapper">
+                <div class="logo">
+                    <p>LOGO</p>
+                </div>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="label-toggle"></label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+
+    <article class="product">
+        <h3 id="product-name"> Cyber Truck </h3>
+        <img src="img/test-image.jpg" alt="help too fast">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione rerum soluta laborum harum ullam voluptas id natus sequi libero quibusdam atque, necessitatibus commodi recusandae perspiciatis a aperiam dolorem error. Error!</p>
+        <form action="https://formspree.io/xbjzppro" method="POST">
+            <h2>Make an order</h2>
+            <div class="form">
+                <label class="email-input" id="email-label" for="email"> Email
+                    <input class="email-input" type="email" id="email" name="email" placeholder="Email" required>
+                </label>
+                <label class="name-input" id="name-label" for="name"> Name
+                    <input class="name-input" type="text" id="name" name="name" placeholder="Your name" required> 
+                </label>
+                <label class="phone-input" id="phone-num-label" for="phone-num"> Phone number
+                    <input class="phone-input" type="number" id="phone-num" name="phone-num" placeholder="Your phone number" maxlength="4" required> 
+                </label>
+                <label class="product-input" id="product-label" for="name"> Product
+                    <input class="product-input" type="text" id="product" name="product"> 
+                </label>
+            </div>
+            <button id="buy-1" class="buy-btn button card-button"> Buy </button>
+            <button type="submit" class="confirm-btn button card-button"> Confirm </button>
+        </form>
+        <!-- <div class="product-buttons"> -->
+        <!-- </div> -->
+    </article>
+    <footer>
+        <p>
+            zbyslav autumn/2020
+        </p>
+    </footer>
+    <script src="js/product.js"></script>
+</body>
+</html>
