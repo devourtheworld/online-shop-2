@@ -22,6 +22,11 @@ function show(){
     document.querySelector('#phone-num').style.opacity = 1;
     document.querySelector('.phone-input').style.opacity = 1;
 
+    document.querySelector('.color').style.display = 'inline-block';
+    // document.querySelector('#phone-num').style.display = 'inline-block';
+    // document.querySelector('#phone-num').style.opacity = 1;
+    document.querySelector('.color').style.opacity = 1;
+
     // document.querySelector('.product-input').style.visibility = 'visible';
     // document.querySelector('#product').style.visibility = 'visible';
 

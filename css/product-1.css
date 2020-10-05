@@ -256,7 +256,7 @@ header .banner h1 {
     }
 }
 
-.product-input, .phone-input, .email-input, .name-input, .confirm-btn {
+.product-input, .phone-input, .email-input, .color, .name-input, .confirm-btn {
     /* visibility: hidden; */
     display: none;
     opacity: 0;
