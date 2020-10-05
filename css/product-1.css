@@ -256,7 +256,7 @@ header .banner h1 {
     }
 }
 
-.product-input, .phone-input, .email-input, .color, .name-input, .confirm-btn {
+.product-input, .phone-input, .email-input, .name-input, .confirm-btn {
     /* visibility: hidden; */
     display: none;
     opacity: 0;
@@ -275,4 +275,13 @@ form{
 
 .confirm-btn{
     margin: 10px 0 10px 0px;
+}
+
+.color-label:nth-child(1){
+    background: red;
+}
+
+#amount{
+    width: 35px;
+    text-align: center;
 }

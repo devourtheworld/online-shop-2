@@ -46,18 +46,22 @@
                     <input class="phone-input" type="number" id="phone-num" name="phone-num" placeholder="Your phone number" maxlength="4" required> 
                 </label>
 
-                <label class="color color-input" id="color1-label" for="color1"> White
-                    <input class="color color-input" type="radio" id="color1" name="product"> 
+                <label class="color color-label color-input" id="color1-label" for="color1"> White
+                    <input class="color color-radio color-input" type="radio" id="color1" name="product-color" value="white" checked> 
                 </label>
-                <label class="color color-input" id="color2-label" for="color2"> Black
-                    <input class="color color-input" type="radio" id="color2" name="product"> 
+                <label class="color color-label color-input" id="color2-label" for="color2"> Black
+                    <input class="color color-radio color-input" type="radio" id="color2" name="product-color" value="black"> 
                 </label>
-                <label class="color color-input" id="color3-label" for="color3"> Red
-                    <input class="color color-input" type="radio" id="color3" name="product"> 
+                <label class="color color-label color-input" id="color3-label" for="color3"> Red
+                    <input class="color color-radio color-input" type="radio" id="color3" name="product-color" value="red"> 
                 </label>
 
-                <label class="color product-input" id="product-label" for="name"> Product
-                    <input class="color product-input" type="text" id="product" name="product"> 
+                <label class="amount-input" id="amount-label" for="amount"> Amount
+                    <input class="amount-input" type="numer" min="1" max="10" value="1" id="amount" name="amount"> 
+                </label>
+
+                <label class="product-input" id="product-label" for="name"> Product
+                    <input class="product-input" type="text" id="product" name="product"> 
                 </label>
             </div>
             <button id="buy-1" class="buy-btn button card-button"> Buy </button>

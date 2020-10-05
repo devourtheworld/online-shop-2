@@ -1,7 +1,7 @@
 document.querySelector('.buy-btn').addEventListener('click', show);
 // document.querySelector('.confirm-btn').addEventListener('click', hide);
 document.querySelector('.buy-btn').addEventListener('click', buy);
-
+document.querySelector('.buy-btn').addEventListener('click', checkAmount);
 
 function show(){
     document.querySelector('.confirm-btn').style.display = 'inline-block';
@@ -22,10 +22,8 @@ function show(){
     document.querySelector('#phone-num').style.opacity = 1;
     document.querySelector('.phone-input').style.opacity = 1;
 
-    document.querySelector('.color').style.display = 'inline-block';
-    // document.querySelector('#phone-num').style.display = 'inline-block';
-    // document.querySelector('#phone-num').style.opacity = 1;
-    document.querySelector('.color').style.opacity = 1;
+    // document.querySelector('.colors').style.display = 'inline-block';
+    // document.querySelector('.colors').style.opacity = 1;
 
     // document.querySelector('.product-input').style.visibility = 'visible';
     // document.querySelector('#product').style.visibility = 'visible';
@@ -63,4 +61,13 @@ function hide(){
 function buy(){
     const product = document.getElementById('#product-name');
     document.getElementById('product').value = document.getElementById('product-name').innerHTML;
+}
+
+
+function checkAmount(){
+    if (document.getElementById('amount').value < 1){
+        document.getElementById('amount').value = 1;
+    } else if (document.getElementById('amount').value > 10){
+        document.getElementById('amount').value = 10;
+    }
 }
