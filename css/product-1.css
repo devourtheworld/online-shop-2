@@ -256,6 +256,13 @@ header .banner h1 {
     }
 }
 
+.product-pic{
+    background-image: url(../img/purple-case.JPG);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
 .product-input, .phone-input, .email-input, .name-input, .confirm-btn {
     /* visibility: hidden; */
     display: none;
